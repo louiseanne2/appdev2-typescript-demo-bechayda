@@ -34,16 +34,22 @@ tsc filename.ts
 ```
 
 ## 01-basics.ts
-Demonstrates **type inference**, **explicit typing**, and what happens when assigning mismatched types.
+This file introduces the basic features of TypeScript such as type inference and explicit typing. It shows how variables are assigned types and what happens when incorrect types are used. It helps beginners understand how TypeScript enforces type safety.
 
 ## 02-vanilla-js-types.js
-Shows how JavaScript’s `typeof` operator works to check variable types at runtime.
+This file demonstrates how JavaScript checks types using the `typeof` operator. It compares how JavaScript handles types at runtime, which helps highlight the difference between JavaScript and TypeScript.
 
 ## 03-flexible-types.ts
-Illustrates the `any` type, allowing reassignment to different types and showing its flexibility (and risks).
+This file explores the `any` type, which allows variables to store any kind of value. It shows how flexibility can be useful but also risky because it removes type safety.
 
 ## 04-arrays-objects.ts
-Covers arrays with union types, object typing with nested properties, and the `Record` type for flexible objects.
+This file explains how to work with arrays and objects in TypeScript. It includes examples of typed arrays, union types, and structured objects with defined properties, making data more organized and predictable.
 
 ## 05-enum.ts
-Introduces enums, specifically string enums, and shows how to assign `enum` values properly.
+This file introduces enums and how they are used to define a set of named constants. It shows how enums make code more readable and prevent invalid values from being assigned. 
+## 06-alternative-to-enum.ts
+## 07-custom-type-role.ts
+## 08-functions.ts
+## 09-special-types.ts
+## 10-form.html and 10-type-narrowing.ts
+## 11-optional.ts
