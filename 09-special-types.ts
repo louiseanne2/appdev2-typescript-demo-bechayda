@@ -1,25 +1,27 @@
-// Special Type - null
-let a: null;
+(() => {
 
-a = null
-// a = "Hi"
+    
+    let a: null
+    a = null
+    console.log('a:', a)
 
-let b: null | string
+    let b: null | string
+    b = null
+    console.log('b (null):', b)
 
-b = null
-b = "Hi"
-// b = 10
+    b = "Hi"
+    console.log('b (string):', b)
 
-// Special Type - undefined
-let c: undefined;
+    // Special Type - undefined
+    let c: undefined
+    c = undefined
+    console.log('c:', c)
 
-c = undefined
-// c = null
-// c = "Hi"
+    let d: undefined | string
+    d = undefined
+    console.log('d (undefined):', d)
 
-let d: undefined | string
+    d = "Hi"
+    console.log('d (string):', d)
 
-d = undefined
-d = "Hi"
-// d = null
-// d = 10
+})()
