@@ -1,9 +1,9 @@
 // Optional Values in parameter
 function generateError(msg?: string) {
-    throw new Error(msg)
+    throw new Error(msg ?? 'Something went wrong');
 }
 
-generateError("An error occured") // Automatic Semicolon Insertion pitfall - add ; to explicitly tell that this is a function
+generateError("An error occured"); // add ; to avoid ASI issue
 // generateError()
 
 
@@ -16,17 +16,20 @@ generateError("An error occured") // Automatic Semicolon Insertion pitfall - add
     }
 
     let user: User = {
-        name: 'Elmer',
-        age: 31
+        name: 'Louise',
+        age: 20
     }
 
-    user.name
-    user.age
-})
+    user.name;
+    user.age;
+})();
+
 
 // Nullish Coalescing `??` operator 
-let input = ''
-const didProvideInput = input ?? false;
+let input: string | null | undefined = '';
+
+const didProvideInput: string | boolean = input ?? false;
+
 
 // try it on browser console log to see results
 // update it `??` to `||`
