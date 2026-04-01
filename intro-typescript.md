@@ -47,9 +47,21 @@ This file explains how to work with arrays and objects in TypeScript. It include
 
 ## 05-enum.ts
 This file introduces enums and how they are used to define a set of named constants. It shows how enums make code more readable and prevent invalid values from being assigned. 
+
 ## 06-alternative-to-enum.ts
+This file shows an alternative way to use enums by using union types (e.g., `'admin' | 'user' | 'guest'`). Instead of relying on enums, it uses string literal types to restrict values. This approach is often simpler, more flexible, and works well with modern TypeScript patterns.
+
 ## 07-custom-type-role.ts
+This file demonstrates how to create custom types using the `type` keyword. It defines reusable type structures (like a user role) and shows how they can be applied to variables or objects. This helps make code more readable and maintainable.
+
 ## 08-functions.ts
+This file explains how to type functions in TypeScript. It includes examples of typed parameters, return types, and function behavior. It shows how TypeScript ensures functions receive the correct inputs and return expected outputs, preventing common runtime errors.
+
 ## 09-special-types.ts
+This file introduces special TypeScript types such as `any`, `unknown`, `never`, and `void`. It explains when to use each type and the differences between them. It also highlights how `unknown` is safer than `any`, and how `never` is used for functions that never return.
+
 ## 10-form.html and 10-type-narrowing.ts
+These files demonstrate type narrowing in a real DOM scenario. The HTML file contains a simple form, while the TypeScript file shows how to safely access DOM elements using techniques like `instanceof`, type assertions, and null checks. It highlights how TypeScript prevents errors when working with elements that may be `null` or of unknown type.
+
 ## 11-optional.ts
+This file explores optional values in TypeScript. It includes optional function parameters, optional object properties, and the use of the nullish coalescing operator (`??`). It explains how to safely handle missing or undefined values and compares `??` with the logical OR (`||`) operator.
